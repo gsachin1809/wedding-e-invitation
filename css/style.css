@@ -390,7 +390,7 @@ img {
 	font-weight: bold;
 	font-style: normal;
 	font-size: 65px;
-	margin: 30px 0;
+	margin: 0 0;
 	color: #674ea7;
 	padding: 10px;
 
@@ -804,3 +804,5 @@ a {
 		}
 	  }
 
+
+	  

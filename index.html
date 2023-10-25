@@ -9,7 +9,7 @@
     <meta name="copyright" content="Sachin Gupta">
     <meta content="width=device-width, initial-scale=1" name="viewport">
     <meta property="og:type" content="Wedding Website">
-    <meta property="og:title" content="Wedding Invitation | SaharshIsha">
+    <meta property="og:title" content="Wedding Invitation | Sachin_Goldy">
     <meta property="og:description" content="Join Sachin and Goldy on their journey of love and commitment. Explore our wedding invitation website for details, RSVP, and more. Save the date and celebrate with us">
     <meta property="og:image" content="https://raw.githubusercontent.com/sarthak-1998/WeddingEvite/master/assets/abc.jpeg">
     <meta property="og:image:type" content="image/jpeg">
@@ -21,13 +21,15 @@
     <meta name="twitter:image" content="https://raw.githubusercontent.com/sarthak-1998/WeddingEvite/master/assets/abc.jpeg">
     
     <link rel="shortcut icon" href="favicon.png" type="image/png">
-    <title>Wedding Invitation | SaharshIsha</title>
+    <title>Wedding Invitation | SachinGoldy</title>
     
     <link href="https://fonts.googleapis.com/css?family=Arvo" rel="stylesheet">
     <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Dancing+Script&amp;display=swap'>
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/flipdown.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css">
+    <script type="text/javascript" src="js/flipdown.js"></script>
 </head>
 <body>
     <div class="sakura-falling"></div>
@@ -62,9 +64,8 @@
             </p>
         </div>
     </div>
-
-    <div class="music">
-        <audio src="./assets/mp3/asd.mp3" id="my_audio" loop="loop"></audio>
+    <div>
+        <div id="flipdown" class="flipdown"></div>
     </div>
 
     <p>How do I get there?</p>
@@ -74,7 +75,7 @@
             <div class="venue">SEE THE VENUE</div>
         </a>
     </div>
-
+    
     <div class="video-container">
         <div class="video2" data-video="lXbrJhRNbqM" data-startseconds="00" data-endseconds="23" data-height="480" data-width="640" id="youtube-player">
         </div>
@@ -127,6 +128,18 @@
       
   </div>
 </div>
+<!-- <audio controls autoplay id="background-audio">
+    <source src="./assets/mp3/asd.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+</audio>
+<button id="play-button">Play Music</button> -->
+<div class="music">
+    <audio src="./assets/mp3/asd.mp3" id="my_audio" loop="loop"></audio> 
+   <!-- <audio src="./assets/mp3/song.mp3" id="my_audio" loop="loop"></audio>  -->
+ </div>
 
+ <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js'></script>
+ <script src='https://cdn.jsdelivr.net/gh/timoschaefer/jQuery-Sakura/jquery-sakura.min.js'></script>
+ <script  src="./js/script.js"></script>
 </body>
 </html>

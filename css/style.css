@@ -825,3 +825,9 @@ a {
     margin: 0 10px;
     color: #fff; /* Customize icon color */
 }
+.timerBackground {
+	background-image: url('../assets/img/background_time.jpg');
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	
+}

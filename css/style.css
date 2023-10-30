@@ -416,6 +416,9 @@ img {
 	margin: 16px;
 	text-align: center;
 }
+.text-color{
+	color: #674ea7;
+}
 
 .title h3 {
 	font-weight: 300;
@@ -427,8 +430,7 @@ img {
 }
 
 .title p {
-	color: #564861;
-	margin: 30px 0 20px;
+	color:#674ea7;
 	text-transform: uppercase;
 	letter-spacing: 3px;
 	font-size: 16px;
@@ -535,17 +537,17 @@ body {
 }
 
 .date {
-	color: #874562;
+	color: #674ea7;
 	font-weight: 900;
 }
 
 .place {
-	color: #874562;
+	color: #674ea7;
 	font-weight: 900;
 }
 
 .footer {
-	color: #564861;
+	color: #674ea7;
 	text-align: center;
 	font-size: 16px;
 	margin: 20px;
@@ -806,7 +808,8 @@ a {
 
 .fontForName{
 	font-family: auto;
-	font-size: 40px;
+	font-size: 30px;
+	color : #ad1360
 }	  
 
 .sticky-footer {
@@ -826,7 +829,7 @@ a {
     color: #fff; /* Customize icon color */
 }
 .timerBackground {
-	background-image: url('../assets/img/background_time.jpg');
+	/* background-image: url('../assets/img/background_v1.jpg'); */
 	background-repeat: no-repeat;
 	background-size: 100% 100%;
 	

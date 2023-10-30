@@ -17,18 +17,42 @@
     });
 
 })(jQuery);
+// Get references to the audio element
+var audio = document.getElementById('my_audio');
+var isPlaying = false;
+
+// Function to start audio
+function startAudio() {
+    console.log("playing..",audio);
+    document.getElementById("my_audio").play();
+    audio.play(); // Start audio playback
+    isPlaying = true;
+}
+
+// Function to stop audio
+function stopAudio() {
+    audio.pause(); // Pause audio playback
+    isPlaying = false;
+    console.log("stop the music ");
+}
+
+// // Function to start audio and stop it after 10 seconds
+function startAndStopAudio() {
+    setTimeout(function() {
+        if (isPlaying) {
+            stopAudio(); // Stop audio after 10 seconds
+        }
+    }, 20000); // 10000 milliseconds (10 seconds)
+}
+
 
 $(document).on('click', function(){
     console.log("click happen");
-    document.getElementById("my_audio").play();
-    console.log('Shaadi me zaroor aana');
+    startAudio();
+    isPlaying = true;
+    startAndStopAudio();
 });
 
-function pauseAudio() { 
-    document.getElementById("my_audio").pause();
-    console.log('Shaadi me pakka aana');
-    event.stopPropagation();
-};
 
 // Set the date we're counting down to
 var countDownDate = new Date("Dec 04, 2023 20:00:00").getTime();
@@ -96,11 +120,6 @@ var styles2 = [
 console.log('\n\n%c SAVE THE DATE: 04th Dec, 2023', styles);
 
 console.log('%cYour presence is requested!%c\n\nRegards: Sachin Gupta', styles1, styles2);
-
-console.log(
-    `%c शादी में जलूल जलूल आना होगा \n\n`,
-    'color: yellow; background:tomato; font-size: 24pt; font-weight: bold',
-)
 
 
   
